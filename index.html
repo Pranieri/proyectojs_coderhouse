@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pixel Art Canvas</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Canvas</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Welcome to the Pixel Art Canvas!</h2>
+      <form id="color-form">
+        <label>
+          <input type="radio" name="color" value="#ff0000" checked /> Red
+        </label>
+        <label>
+          <input type="radio" name="color" value="#00ff00" /> Green
+        </label>
+        <label>
+          <input type="radio" name="color" value="#0000ff" /> Blue
+        </label>
+      </form>
+      <canvas id="canvas" width="800" height="600"></canvas>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Pixel Art';
+  src: url('pixel-art.ttf') format('truetype');
+}
+
+body {
+  background-color: #222;
+  font-family: 'Pixel Art', sans-serif;
+  background-image: url('bg.png');
+  background-size: cover;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 0 0 10px #000;
+}
+
+nav {
+  text-align: center;
+  background: linear-gradient(to bottom, #333, #222);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  transition: background 0.5s;
+}
+
+nav:hover {
+  background: linear-gradient(to top, #333, #222);
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #222;
+  }
+  50% {
+    background-color: #444;
+  }
+  100% {
+    background-color: #222;
+  }
+}
+
+form {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+label {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+input[type="radio"] {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+}
+
+input[type="radio"]:before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked:before {
+  background-color: #fff;
+}
+
+canvas {
+  border: 2px solid #fff;
+}
