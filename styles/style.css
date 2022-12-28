@@ -1,19 +1,18 @@
-:root 
-{
-    --dark-body: #4d4c5a;
-    --dark-main: #141529;
-    --dark-second: #79788c;
-    --dark-hover: #323048;
-    --dark-text: #f8fbff;
-    --light-body: #f3f8fe;
-    --light-main: #fdfdfd;
-    --light-second: #c3c2c8;
-    --light-hover: #edf0f5;
-    --light-text: #151426;
-    --blue: #007497;
-    --white: #fff;
-    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    --font-family: sans-serif;
+:root {
+  --dark-body: #4d4c5a;
+  --dark-main: #141529;
+  --dark-second: #79788c;
+  --dark-hover: #323048;
+  --dark-text: #f8fbff;
+  --light-body: #f3f8fe;
+  --light-main: #fdfdfd;
+  --light-second: #c3c2c8;
+  --light-hover: #edf0f5;
+  --light-text: #151426;
+  --blue: #007497;
+  --white: #fff;
+  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --font-family: sans-serif;
 }
 
 body {
@@ -38,9 +37,9 @@ body {
   box-sizing: border-box;
 }
 
-.card{
+.card {
   background-color: #0f1348; /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   color: rgba(255, 255, 255, 0.863);
   font-weight: bold;
   position: absolute;
@@ -54,7 +53,7 @@ body {
   height: 650px;
 }
 
-.bg-text{
+.bg-text {
   margin: 10px;
   padding: 10px;
 }
@@ -62,11 +61,12 @@ body {
 .calendar {
   height: max-content;
   width: max-content;
-  background-color: var(--bg-main);
-  border-radius: 30px;
   padding: 20px;
   position: relative;
   overflow: hidden;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #2c0e41, #34104d);
+  box-shadow: 20px 20px 60px #2a0d3d, -20px -20px 60px #381153;
 }
 
 .body .calendar {
@@ -79,7 +79,7 @@ body {
   align-items: center;
   font-size: 25px;
   font-weight: 600;
-  color: var(--color-txt);
+  color: white;
   padding: 10px;
 }
 
@@ -104,7 +104,7 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 2px;
-  color: var(--color-txt);
+  color: var(--bg-second);
 }
 
 .calendar-days div {
@@ -131,7 +131,7 @@ body {
 .calendar-days div span:nth-child(3) {
   width: 2px;
   height: 0;
-  background-color: var(--color-txt);
+  background-color: var(--bg-second);
 }
 
 .calendar-days div:hover span:nth-child(1),
@@ -153,7 +153,7 @@ body {
 .calendar-days div span:nth-child(4) {
   width: 0;
   height: 2px;
-  background-color: var(--color-txt);
+  background-color: var(--bg-second);
 }
 
 .calendar-days div:hover span:nth-child(2),
@@ -236,7 +236,7 @@ body {
 
 .toggle span {
   margin-right: 10px;
-  color: var(--color-txt);
+  color: var(--bg-second);
 }
 
 .month-list {
@@ -245,7 +245,6 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: var(--bg-main);
   padding: 20px;
   grid-template-columns: repeat(3, auto);
   gap: 5px;
@@ -253,6 +252,9 @@ body {
   transform: scale(1.5);
   visibility: hidden;
   pointer-events: none;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #2c0e41, #34104d);
+  box-shadow: 20px 20px 60px #2a0d3d, -20px -20px 60px #381153;
 }
 
 .month-list.show {
@@ -273,7 +275,7 @@ body {
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
-  color: var(--color-txt);
+  color: var(--bg-second);
 }
 
 .month-list > div > div:hover {
