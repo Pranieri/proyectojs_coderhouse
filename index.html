@@ -8,47 +8,133 @@
     <title>Document</title>
   </head>
   <body>
-    <main>
-      <div class="bg-image"></div>
-      <div class="card">
-        <div class="bg-text">
-          <h1>Principal Card</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-            deserunt molestiae eos libero architecto cumque laboriosam eum
-            doloribus voluptas delectus, est sit porro quasi fuga dicta
-            repudiandae reiciendis, ducimus consequuntur!
-          </p>
-        </div>
-        <div class="calendar">
-          <div class="calendar-header">
-            <span class="month-picker" id="month-picker">April</span>
-            <div class="year-picker">
-              <span class="year-change" id="prev-year">
-                <pre><</pre>
-              </span>
-              <span id="year">2022</span>
-              <span class="year-change" id="next-year">
-                <pre>></pre>
-              </span>
-            </div>
-          </div>
-          <div class="calendar-body">
-            <div class="calendar-week-day">
-              <div>Sun</div>
-              <div>Mon</div>
-              <div>Tue</div>
-              <div>Wed</div>
-              <div>Thu</div>
-              <div>Fri</div>
-              <div>Sat</div>
-            </div>
-            <div class="calendar-days"></div>
-          </div>
-          <div class="month-list"></div>
-        </div>
+    <header class="header__border">
+      <div class="header__logo">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/6415/6415824.png"
+          alt="logo generico del header"
+        />
       </div>
+      <div class="field" id="searchform">
+        <input
+          type="text"
+          id="searchterm"
+          placeholder="Buscar (no se ilusionen, no funciona)"
+        />
+        <button type="button" id="search">Go!</button>
+      </div>
+
+      <div class="contenedor">
+        <ul class="item__list">
+          <il class="item"
+            ><a class="header__links" href="./index.html">INICIO</a></il
+          >
+          <il class="item"><a href="#">PRODUCTOS</a></il>
+          <il class="item"><a href="#">HORARIOS</a></il>
+          <il class="item"><a href="#">CONTACTO</a></il>
+          <il class="item"><a href="#">QUIENES SOMOS</a></il>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Bienvenido a la tienda generica!</h1>
+      <p class="description">
+        Hola persona que esta leyendo esto, vamos a explicar un poquito de que
+        se trata esto.
+        <br />
+        Lo que tenemos aca, es una pagina generica con pocos productos (estamos
+        en crisis) para poder calcular sus precios con todos los bellos
+        impuestos que tiene nuestro pais.
+      </p>
+      <br />
+      <div class="selector-moneda">
+        <button id="precioPesos">Ver precio en pesos</button>
+        <button id="precioDolares" onclick="AlertaDolares()">Ver precio en dolares</button>
+      </div>
+      <br />
+      <section class="card" href="#">
+        <div class="card-item">
+          <div class="card-name">
+            <h2>Arroz</h2>
+            <p>Arroz para cocinar cositas</p>
+          </div>
+          <hr />
+          <div class="card-description">
+            <img
+              src="https://www.aldeaecologica.com.ar/wp-content/uploads/2021/11/arroz-arborio.jpg"
+              alt=""
+            />
+          </div>
+          <hr />
+          <div class="contador">
+            <button id="botonRestarArroz" onclick="RestarArroz()">-</button>
+            <label id="labelArroz">0</label>
+            <button id="botonSumarArroz" onclick="SumarArroz()">+</button>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-name">
+            <h2>Nombre de la Card</h2>
+            <p>Subtitulo de la Card</p>
+          </div>
+          <hr />
+          <div class="card-description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              aliquid provident suscipit ut ratione. Dicta, error! Hic veritatis
+              consequuntur, nostrum, a maxime pariatur modi cum laborum
+              incidunt, libero maiores debitis?
+            </p>
+          </div>
+          <hr />
+          <div class="contador">
+            <button id="botonRestar">-</button>
+            <label for="text">0</label>
+            <button id="botonSumar">+</button>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-name">
+            <h2>Nombre de la Card</h2>
+            <p>Subtitulo de la Card</p>
+          </div>
+          <hr />
+          <div class="card-description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              aliquid provident suscipit ut ratione. Dicta, error! Hic veritatis
+              consequuntur, nostrum, a maxime pariatur modi cum laborum
+              incidunt, libero maiores debitis?
+            </p>
+          </div>
+          <hr />
+          <div class="contador">
+            <button id="botonRestar">-</button>
+            <label for="text">0</label>
+            <button id="botonSumar">+</button>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer__border">
+      <div class="social__media">
+        <a href="https://www.twitter.com/" class="footer__media"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/1051/1051382.png"
+            alt="twitter logo"
+        /></a>
+        <a href="https://www.instagram.com/" class="footer__media"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/1051/1051364.png"
+            alt="instragram logo"
+        /></a>
+        <a href="https://www.facebook.com/" class="footer__media"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/2594/2594835.png"
+            alt="facebook logo"
+        /></a>
+      </div>
+    </footer>
     <script src="./js/script.js"></script>
   </body>
 </html>

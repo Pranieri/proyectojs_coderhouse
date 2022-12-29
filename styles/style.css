@@ -1,283 +1,157 @@
-:root {
-  --dark-body: #4d4c5a;
-  --dark-main: #141529;
-  --dark-second: #79788c;
-  --dark-hover: #323048;
-  --dark-text: #f8fbff;
-  --light-body: #f3f8fe;
-  --light-main: #fdfdfd;
-  --light-second: #c3c2c8;
-  --light-hover: #edf0f5;
-  --light-text: #151426;
-  --blue: #007497;
-  --white: #fff;
-  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  --font-family: sans-serif;
-}
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
 
 body {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1181%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1182)'%3e%3c/rect%3e%3cpath d='M496.954%2c252.867C517.117%2c252.102%2c535.171%2c242.424%2c546.476%2c225.71C559.583%2c206.331%2c570.41%2c181.723%2c558.82%2c161.401C547.167%2c140.969%2c520.47%2c138.376%2c496.954%2c138.881C474.57%2c139.362%2c451.347%2c144.949%2c439.525%2c163.962C427.116%2c183.919%2c427.712%2c209.994%2c440.463%2c229.734C452.297%2c248.053%2c475.161%2c253.694%2c496.954%2c252.867' fill='rgba(121%2c 28%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M634.43826956635 340.3613664689763L668.1376832703894 438.23157031954514 766.0078871209582 404.53215661550564 732.3084734169188 306.6619527649368z' fill='rgba(121%2c 28%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M481.18%2c369.409C535.694%2c367.323%2c580.333%2c330.475%2c606.996%2c282.881C632.987%2c236.485%2c640.654%2c179.558%2c612.975%2c134.149C586.224%2c90.261%2c532.578%2c76.248%2c481.18%2c76.471C430.259%2c76.692%2c379.489%2c92.844%2c351.352%2c135.285C320.059%2c182.486%2c310.037%2c243.668%2c337.501%2c293.195C365.68%2c344.011%2c423.117%2c371.631%2c481.18%2c369.409' fill='rgba(121%2c 28%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M183.1328433495674 311.8707408803659L267.97014928047895 264.84465430199396 136.10675677119548 227.03343494945435z' fill='rgba(121%2c 28%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M778.9946106248578 369.2333613345285L745.9941211369837 181.02962133054842 616.1876974259644 286.14479065787776z' fill='rgba(121%2c 28%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-43.60028199621693 309.393154896893L-38.718083993855934 449.20101346984757 96.20757657673764 304.510956894532z' fill='rgba(121%2c 28%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1320.125159455335 277.3934785867695L1334.9036784500267 172.2388519902605 1229.7490518535178 157.46033299556882 1214.9705328588261 262.6149595920778z' fill='rgba(121%2c 28%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M860.792%2c204.19C889.102%2c203.787%2c914.771%2c188.413%2c929.086%2c163.985C943.569%2c139.27%2c947.054%2c107.774%2c931.321%2c83.835C916.718%2c61.615%2c887.339%2c58.574%2c860.792%2c60.073C837.343%2c61.397%2c816.007%2c71.649%2c802.834%2c91.093C787.576%2c113.615%2c776.638%2c141.769%2c789.045%2c165.979C802.29%2c191.825%2c831.753%2c204.604%2c860.792%2c204.19' fill='rgba(121%2c 28%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M871.4591056909651 543.3770261310804L807.9956035988397 456.0270092416945 784.1090888015792 606.8405282232058z' fill='rgba(121%2c 28%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1111.486%2c549.988C1153.785%2c550.394%2c1195.676%2c529.076%2c1214.163%2c491.029C1230.999%2c456.38%2c1212.757%2c417.665%2c1191.34%2c385.644C1172.821%2c357.955%2c1144.77%2c338.843%2c1111.486%2c337.513C1075.579%2c336.078%2c1039.454%2c348.731%2c1019.758%2c378.789C998.109%2c411.829%2c993.509%2c454.274%2c1012.164%2c489.092C1031.822%2c525.781%2c1069.865%2c549.589%2c1111.486%2c549.988' fill='rgba(121%2c 28%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1181'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='84.72%25' y1='-39.29%25' x2='15.28%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1182'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(153%2c 0%2c 158%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-  display: grid;
-  place-items: center;
-  font-family: var(--font-family);
-  --bg-main: var(--light-main);
-  --bg-second: var(--light-second);
-  --color-hover: var(--light-hover);
-  --color-txt: var(--light-text);
-}
-
-* {
+  background-color: #114a35;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
-.card {
-  background-color: #0f1348; /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-  color: rgba(255, 255, 255, 0.863);
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  border-radius: 10px;
-  height: 650px;
-}
-
-.bg-text {
-  margin: 10px;
-  padding: 10px;
-}
-
-.calendar {
-  height: max-content;
-  width: max-content;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 30px;
-  background: linear-gradient(145deg, #2c0e41, #34104d);
-  box-shadow: 20px 20px 60px #2a0d3d, -20px -20px 60px #381153;
-}
-
-.body .calendar {
-  box-shadow: var(--shadow);
-}
-
-.calendar-header {
+header {
   display: flex;
+  width: 100%;
+  height: 75px;
+  padding: none;
+  color: aliceblue;
   justify-content: space-between;
   align-items: center;
-  font-size: 25px;
-  font-weight: 600;
-  color: white;
-  padding: 10px;
 }
 
-.calendar-body {
-  padding: 10px;
-}
-
-.calendar-week-day {
-  height: 50px;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  font-weight: 600;
-}
-
-.calendar-week-day div {
-  display: grid;
-  place-items: center;
-  color: var(--bg-second);
-}
-
-.calendar-days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 2px;
-  color: var(--bg-second);
-}
-
-.calendar-days div {
-  width: 50px;
-  height: 50px;
+footer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  position: relative;
-  cursor: pointer;
-  animation: to-top 1s forwards;
-}
-
-.calendar-days div span {
-  position: absolute;
-}
-
-.calendar-days div:hover span {
-  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
-}
-
-.calendar-days div span:nth-child(1),
-.calendar-days div span:nth-child(3) {
-  width: 2px;
-  height: 0;
-  background-color: var(--bg-second);
-}
-
-.calendar-days div:hover span:nth-child(1),
-.calendar-days div:hover span:nth-child(3) {
-  height: 100%;
-}
-
-.calendar-days div span:nth-child(1) {
-  bottom: 0;
-  left: 0;
-}
-
-.calendar-days div span:nth-child(3) {
-  top: 0;
-  right: 0;
-}
-
-.calendar-days div span:nth-child(2),
-.calendar-days div span:nth-child(4) {
-  width: 0;
-  height: 2px;
-  background-color: var(--bg-second);
-}
-
-.calendar-days div:hover span:nth-child(2),
-.calendar-days div:hover span:nth-child(4) {
   width: 100%;
-}
-
-.calendar-days div span:nth-child(2) {
-  top: 0;
-  left: 0;
-}
-
-.calendar-days div span:nth-child(4) {
+  height: 75px;
+  padding: none;
+  color: aliceblue;
   bottom: 0;
-  right: 0;
-}
-
-.calendar-days div:hover span:nth-child(2) {
-  transition-delay: 0.2s;
-}
-
-.calendar-days div:hover span:nth-child(3) {
-  transition-delay: 0.4s;
-}
-
-.calendar-days div:hover span:nth-child(4) {
-  transition-delay: 0.6s;
-}
-
-.calendar-days div.curr-date,
-.calendar-days div.curr-date:hover {
-  background-color: var(--blue);
-  color: var(--white);
-  border-radius: 50%;
-}
-
-.calendar-days div.curr-date span {
-  display: none;
-}
-
-.month-picker {
-  padding: 5px 10px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.month-picker:hover {
-  background-color: var(--color-hover);
-}
-
-.year-picker {
-  display: flex;
-  align-items: center;
-}
-
-.year-change {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  margin: 0 10px;
-  cursor: pointer;
-}
-
-.year-change:hover {
-  background-color: var(--color-hover);
-}
-
-.calendar-footer {
-  padding: 10px;
-  display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.toggle {
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.header__border {
+  border-radius: 5px;
+  background: linear-gradient(225deg, #0f4330, #124f39);
+  box-shadow: -20px 20px 60px #0e3f2d, 20px -20px 60px #14553d;
+}
+
+.header__logo {
   display: flex;
+  justify-content: flex-start;
 }
 
-.toggle span {
-  margin-right: 10px;
-  color: var(--bg-second);
+.header__logo img {
+  height: 50px;
+  filter: invert(100%);
+  padding: 10px;
 }
 
-.month-list {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding: 20px;
-  grid-template-columns: repeat(3, auto);
-  gap: 5px;
-  display: grid;
-  transform: scale(1.5);
-  visibility: hidden;
-  pointer-events: none;
-  border-radius: 50px;
-  background: linear-gradient(145deg, #2c0e41, #34104d);
-  box-shadow: 20px 20px 60px #2a0d3d, -20px -20px 60px #381153;
+.item__list {
+  justify-content: space-between;
+  padding: 0 15px 0 0;
 }
 
-.month-list.show {
-  transform: scale(1);
-  visibility: visible;
-  pointer-events: visible;
-  transition: all 0.2s ease-in-out;
+.item {
+  padding: 10px;
 }
 
-.month-list > div {
-  display: grid;
-  place-items: center;
+.item:hover {
+  background-color: #09251b;
 }
 
-.month-list > div > div {
-  width: 100%;
-  padding: 5px 20px;
-  border-radius: 10px;
+.footer__border {
+  border-radius: 5px;
+  background: linear-gradient(225deg, #0f4330, #124f39);
+  box-shadow: -20px 20px 60px #0e3f2d, 20px -20px 60px #14553d;
+}
+
+.footer__media img {
+  filter: invert(100%);
+  padding: 15px;
+  height: 25px;
+}
+
+main {
+  height: 800px;
+  color: aliceblue;
+  border-radius: 5px;
+  background: #185339;
+  box-shadow: inset -20px 20px 60px #144730, inset 20px -20px 60px #1c5f42;
   text-align: center;
-  cursor: pointer;
-  color: var(--bg-second);
 }
 
-.month-list > div > div:hover {
-  background-color: var(--color-hover);
+h1 {
+  text-align: center;
+  padding: 5px;
+  color: aliceblue;
+}
+
+.description {
+  text-align: center;
+  padding: 5px 25px;
+  color: aliceblue;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.card-item {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 3px 3px 6px rgb(44, 34, 49);
+}
+
+.card-description {
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.card-description img{
+  padding: 10px;
+  height: 250px;
+  border-radius: 30px;
+}
+
+.field {
+  height: 50px;
+  display: flex;
+  position: realtive;
+  margin: 5em auto;
+  width: 500px;
+  flex-direction: row;
+  box-shadow: 1px 1px 0 rgb(9, 61, 51), 2px 2px 0 rgb(9, 61, 51),
+    3px 3px 0 rgb(9, 61, 51), 4px 4px 0 rgb(9, 61, 51), 5px 5px 0 rgb(9, 61, 51),
+    6px 6px 0 rgb(9, 61, 51), 7px 7px 0 rgb(9, 61, 51);
+}
+
+.field > input[type="text"],
+.field > button {
+  display: block;
+  font: 0.8em "Montserrat Alternates";
+}
+
+.field > input[type="text"] {
+  flex: 1;
+  padding: 0.6em;
+  border: 0.2em solid rgb(22, 88, 75);
+}
+
+.field > button {
+  padding: 0.6em 0.8em;
+  background-color: rgb(23, 82, 70);
+  color: white;
+  border: none;
 }
