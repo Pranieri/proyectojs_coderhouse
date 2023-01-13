@@ -1,20 +1,11 @@
-function AlertaDolares(){
-    alert("AFIP dice: Epa! Alguien dijo dolares? Mejor vamos a sacarselos, nadie puede usar dolares en este pais, segui mirando en pesos. Argentina, campeones del mundo")
-}
+$(document).ready(function(){
+	$('.header').height($(window).height());
+})
 
-let cantArroz = 0;
-
-function RestarArroz(){
-    if (document.getElementById('labelArroz').value == 0){
-        alert("No se puede restar mas productos")
-    }else{
-        cantArroz=-1
-        document.getElementById('labelArroz').value=cantArroz
-    }
+var ready = (callback) => {
+    if (document.readyState != "loading") callback();
+    else document.addEventListener("DOMContentLoaded", callback);
 }
-
-function SumarArroz(){
-    cantArroz=document.getElementById('labelArroz').value
-    cantArroz=+1
-    document.getElementById('labelArroz').innerHTML=cantArroz
-}
+ready(() => {
+    document.querySelector(".header").style.height = window.innerHeight + "px";
+})
